@@ -1,0 +1,201 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2fff2;
+  color: #2d2d2d;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0ed7d7;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  
+}
+
+.feature {
+  background-color: rgba(0, 143, 220, 0.704);
+  padding: 15px;
+  width: 45%;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+.animated-fade{
+  animation: fadeInOut 3s infinite;
+}
+@keyframes fadeInOut {
+  0%   { opacity: 0; }
+  50%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes popup {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.feature {
+  background-color: white;
+  padding: 15px;
+  width: 45%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  /* Popup animation */
+  animation: popup 0.6s ease-out;
+  opacity: 0; /* ensures smooth fade-in */
+  animation-fill-mode: forwards;
+}
+.feature:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
+.animated-fade {
+  animation: fadeInOut 3s infinite;
+}
+
+
+.cta {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.icon-bounce {
+  display: inline-block;
+  animation: bounce 1s ease infinite;
+}
+@keyframes appleFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: appleFadeInUp 1s ease-out forwards;
+}
+
+/* Optional delay for staggered animation */
+.fade-delay-1 { animation-delay: 0.2s; }
+.fade-delay-2 { animation-delay: 0.4s; }
+.fade-delay-3 { animation-delay: 0.6s; }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background: linear-gradient(-45deg, #f0f0f0, #dfffdc, #e0ffe0, #c9f0c9);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.feature {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+#bgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+
+  background: url('{{ url_for("static", filename="chris-ensminger-yJDZTDeHeG8-unsplash.jpg") }}') no-repeat center center fixed;
+  background-size: cover;
+
+  /* Optional overlay effect */
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.7); /* soft white overlay */
+  z-index: -1;
+}
+cen

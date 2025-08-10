@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KrishiRent - Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <header>
+    <h1>🚜 Welcome to Shet Sarthee</h1>
+    <p>Your one-stop solution for renting equipment and selling farm products</p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/sell">Sell Product</a>
+      <a href="/products">All Products</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Why KrishiRent?</h2>
+      <p>Small and medium farmers can now rent tools, and also sell their own farm products easily.</p>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+       
+        <h3>🛠 Rent Equipment</h3>
+        <p>Connect with owners who have tractors, sprayers, and more available for rent.</p>
+      </div>
+      <div class="feature">
+        <h3>🧺 Sell Farm Products</h3>
+        <p>Post your farm produce and reach local buyers easily.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <a href="/sell" class="btn">Start Selling Now</a>
+      <a href="/products" class="btn">View All Products</a>
+    </section>
+  </main>
+ 
+<video autoplay muted loop id="bgVideo">
+  <source src="{{ url_for('static', filename='bg.mp4') }}" type="video/mp4">
+</video>
+
+
+
+  <footer>
+    <p>&copy; 2025 KrishiRent. Developed by Gaurav G Sonavane</p>
+  </footer>
+
+</body>
+</html>
