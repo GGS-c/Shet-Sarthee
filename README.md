@@ -1,5 +1,6 @@
 # Shet-Sarthee
 link = https://ggs-c.github.io/Shet-Sarthee/
+
 Shet Sarthee
 
 Shet Sarthee (developed by Gaurav G. Sonavane) is a modern, user-friendly platform aimed at empowering small and medium-scale farmers to optimize their agricultural operations. With dual functionality, the platform lets users rent farming equipment and sell farm products—making agriculture more accessible, affordable, and profitable.
